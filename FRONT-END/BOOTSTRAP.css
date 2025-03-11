@@ -1,0 +1,107 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #a0a0a0;
+}
+
+.navbar {
+    background-color: #424242;
+}
+
+.navbar-nav{
+    color: #424242;
+}
+.navbar-brand {
+    color: #443f3f !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #a0a0a0 !important;
+}
+
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    width: 25%;
+    background-color: #343a40;
+    color: #a0a0a0;
+    padding-top: 1rem;
+}
+
+.sidebar .list-group-item {
+    background-color: #343a40;
+    border: none;
+    color: #a0a0a0;
+}
+
+.sidebar .list-group-item:hover {
+    background-color: #007bff;
+    color: #a0a0a0;
+}
+
+.content {
+    margin-left: 25%;
+    padding: 2rem;
+    background-color:#a0a0a0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.card {
+    margin: 1rem 0;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    border-bottom: 1px solid#a0a0a0;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.card-text {
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.footer {
+    background-color: #007bff;
+    color: #a0a0a0;
+    padding: 1rem 0;
+}
+
+.spinner-border {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    border-width: 0.3rem;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 8px;
+}
