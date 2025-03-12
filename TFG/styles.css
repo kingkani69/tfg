@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Fondo negro para toda la página */
+    color: #ffffff; /* Color del texto en la página */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+}
+
+header {
+    background-color: #ff0000; /* Fondo rojo para la barra de navegación */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .navbar-brand span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #ffffff; /* Texto blanco en la barra de navegación */
+}
+
+header .btn-outline-success {
+    color: #ffffff; /* Botón de búsqueda con texto blanco */
+    border-color: #ffffff; /* Borde blanco */
+}
+
+header .btn-outline-success:hover {
+    background-color: #ffffff; /* Fondo blanco al pasar el cursor */
+    color: #ff0000; /* Texto rojo al pasar el cursor */
+}
+
+main {
+    flex: 1; /* Hace que el contenido ocupe el espacio disponible */
+}
+
+.carousel-container {
+    background-color: #ff0000; /* Fondo rojo para el contenedor del carrusel */
+    padding: 20px; /* Espaciado alrededor del carrusel */
+    border-radius: 8px; /* Bordes redondeados para el contenedor */
+    margin: 20px; /* Espaciado con respecto al resto de la página */
+}
+
+.carousel-inner {
+    background-color: #ffffff; /* Fondo blanco para el carrusel */
+    padding: 10px; /* Espaciado alrededor de las imágenes */
+    border-radius: 8px; /* Bordes redondeados para una mejor estética */
+}
+
+.carousel-inner img {
+    width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+    height: 600px; /* Ajusta la altura de las imágenes */
+    object-fit: cover;
+    border-radius: 5px; /* Bordes redondeados en las imágenes */
+}
+
+footer {
+    background-color: #ff0000; /* Fondo rojo para el footer */
+    color: #ffffff; /* Texto blanco */
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: auto; /* Empuja el footer hacia el final si no hay contenido suficiente */
+}
+
+footer strong {
+    font-size: 1.2rem;
+}
