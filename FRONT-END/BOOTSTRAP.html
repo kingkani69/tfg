@@ -8,105 +8,181 @@
     <link rel="stylesheet" href="BOOTSTRAP.css">
 </head>
 <body>
+     <!-- Barra superior con logo y barra de búsqueda -->
+     <div class="container-fluid bg-body-tertiary py-2">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center text-md-left">
+                <a class="navbar-brand" href="#">JG'S</a>
+            </div>
+            <div class="col-md-8">
+                <form class="d-flex justify-content-center" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">JG'S</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="BOOTSTRAP.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="PRODUCTOS-DESTACADOS.html">Productos Destacados</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="PRODUCTOS.html">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="CONTACTO.html">Contacto</a>
-                </li>
-            </ul>
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="PRODUCTOS.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PRODUCTOS-DESTACADOS.html">Marcas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PRODUCTOS.html">Precios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro.php">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    
 
-    <!-- Barra lateral -->
-    <div class="sidebar">
-        <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action">Inicio</a>
-            <a href="#productosDestacados" class="list-group-item list-group-item-action dropdown-toggle" data-toggle="collapse">Productos Destacados</a>
-            <div class="collapse" id="productosDestacados">
-                <a href="#" class="list-group-item list-group-item-action">Toyota Yaris GR</a>
-                <a href="#" class="list-group-item list-group-item-action">BMW M4</a>
-                <a href="#" class="list-group-item list-group-item-action">Audi RSQ5</a>
-            </div>
-            <a href="#productos" class="list-group-item list-group-item-action dropdown-toggle" data-toggle="collapse">Productos</a>
-            <div class="collapse" id="productos">
-                <a href="#" class="list-group-item list-group-item-action">Toyota Yaris GR</a>
-                <a href="#" class="list-group-item list-group-item-action">Honda Civic Type R</a>
-                <a href="#" class="list-group-item list-group-item-action">BMW M4</a>
-                <a href="#" class="list-group-item list-group-item-action">Audi RSQ5</a>
-                <a href="#" class="list-group-item list-group-item-action">Audi RS3</a>
-                <a href="#" class="list-group-item list-group-item-action">Lamborghini Urus Performante</a>
-                
+   <!-- Página de productos -->
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <img src="coche1.jpg" class="card-img-top" alt="Producto 1">
+            <div class="card-body">
+                <h5 class="card-title">Toyota Yaris GR</h5>
+                <p class="card-text">Nuevo Toyota GR Yaris, un modelo pensado para el disfrute con una evolución extraordinaria impulsado por un potente motor de 3 cilindros y 8 velocidades.</p>
+                <a href="#" class="btn btn-primary">Ver más</a>
             </div>
         </div>
     </div>
-
-    <!-- Contenido principal -->
-    <div class="content container">
-        <!-- Página de inicio con carrusel -->
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="coche1.jpg" class="d-block w-100" alt="Imagen 1">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Toyota Yaris GR</h5>
-                        <p>40.000€</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="coche2.jpeg" class="d-block w-100" alt="Imagen 2">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Honda Civic Type R</h5>
-                        <p>50.000€
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="coche3.jpg" class="d-block w-100" alt="Imagen 3">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>BMW M4</h5>
-                        <p>90.000€</p>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Siguiente</span>
-            </a>
+    <div class="col-md-4">
+        <div class="card">
+            <img src="coche2.jpeg" class="card-img-top" alt="Producto 2">
+            <h5 class="card-title">Honda Civic Type R</h5>
+            <p class="card-text">El nuevo Type R cuenta con un sistema de suspensión completamente nuevo, dirección asistida eléctrica adaptable al movimiento y neumáticos a medida 265/30/ZR19</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
         </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="footer bg-light text-center">
-        <div class="container">
-            <span class="text-muted">© 2025 Concesionario de Coches</span>
+    <div class="col-md-4">
+        <div class="card">
+            <img src="coche3.jpg" class="card-img-top" alt="Producto 3">
+            <div class="card-body">
+                <h5 class="card-title">BMW M4</h5>
+                <p class="card-text">El nuevo BMW M4 Competition Coupé impresiona con 405 kW (510 CV) y un par de 650 Nm. Equipado con un motor BMW M TwinPower Turbo de elevadas prestaciones, cambio M Steptronic de 8 velocidades con Drivelogic, tracción a las cuatro ruedas M xDrive</p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
         </div>
-    </footer>
+    </div>
+<div class="col-md-4">
+    <div class="card">
+        <img src="coche4.jpg" class="card-img-top" alt="Producto 3">
+        <div class="card-body">
+            <h5 class="card-title">Audi RSQ5</h5>
+            <p class="card-text">El nuevo Audi SQ5 SUV combina la impresionante potencia de su motor de 270 kW con un amplio espacio interior, una nueva pantalla panorámica y detalles exclusivos.</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="card">
+        <img src="coche5.webp" class="card-img-top" alt="Producto 3">
+        <div class="card-body">
+            <h5 class="card-title">Audi RS3</h5>
+            <p class="card-text">El Audi RS 3 Sportback es el compacto deportivo más impresionante. Con 400 CV de potencia y una aceleración de 0 a 100 km/h de solo 3,8 segundos.</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="card">
+        <img src="coche6.jpg" class="card-img-top" alt="Producto 3">
+        <div class="card-body">
+            <h5 class="card-title">Lamborghini Urus Performante</h5>
+            <p class="card-text">El Urus Performante es una versión mejorada del Lamborghini Urus estándar. Es más potente (tiene 666 CV) y ligero (47 kg menos).</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+        </div>
+    </div>
+</div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <img src="mercdesA35.jpg.avif" class="card-img-top" alt="Producto 1">
+            <div class="card-body">
+                <h5 class="card-title">Mercedes-AMG A 35 </h5>
+                <p class="card-text">El más compacto de la familia AMG no se ha querido perder la oportunidad de entrar en el listado y lo hace con su versión de 306 caballos de potencia, asociada al distintivo ECO de la DGT.</p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <img src="toyotaSupra.jpg" class="card-img-top" alt="Producto 2">
+            <h5 class="card-title">Toyota Supra</h5>
+            <p class="card-text">El icónico deportivo japonés no podía faltar en esta lista y es que en su nueva generación el Toyota Supra incorpora una versión de acceso que se caracteriza por ser más ligera y con una distribución de pesos mejor que su hermano Performance. </p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <img src="coche3.jpg" class="card-img-top" alt="Producto 3">
+            <div class="card-body">
+                <h5 class="card-title">BMW M4</h5>
+                <p class="card-text">El nuevo BMW M4 Competition Coupé impresiona con 405 kW (510 CV) y un par de 650 Nm. Equipado con un motor BMW M TwinPower Turbo de elevadas prestaciones, cambio M Steptronic de 8 velocidades con Drivelogic, tracción a las cuatro ruedas M xDrive</p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+    </div>
+<div class="col-md-4">
+    <div class="card">
+        <img src="coche4.jpg" class="card-img-top" alt="Producto 3">
+        <div class="card-body">
+            <h5 class="card-title">Audi RSQ5</h5>
+            <p class="card-text">El nuevo Audi SQ5 SUV combina la impresionante potencia de su motor de 270 kW con un amplio espacio interior, una nueva pantalla panorámica y detalles exclusivos.</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="card">
+        <img src="coche5.webp" class="card-img-top" alt="Producto 3">
+        <div class="card-body">
+            <h5 class="card-title">Audi RS3</h5>
+            <p class="card-text">El Audi RS 3 Sportback es el compacto deportivo más impresionante. Con 400 CV de potencia y una aceleración de 0 a 100 km/h de solo 3,8 segundos.</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="card">
+        <img src="coche6.jpg" class="card-img-top" alt="Producto 3">
+        <div class="card-body">
+            <h5 class="card-title">Lamborghini Urus Performante</h5>
+            <p class="card-text">El Urus Performante es una versión mejorada del Lamborghini Urus estándar. Es más potente (tiene 666 CV) y ligero (47 kg menos).</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+        </div>
+    </div>
+</div>
+</div>
 
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="footer bg-light text-center">
+    <div class="container">
+        <span class="text-muted">© 2025 Concesionario JG'S</span>
+    </div>
+</footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -127,5 +203,7 @@
             });
         });
     </script>
+</body>
+</html>
 </body>
 </html>
