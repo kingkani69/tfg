@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro e Inicio de Sesión</title>
+    <link rel="stylesheet" href="registro.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Incluye jQuery -->
+</head>
+<body>
+    <header>
+        <h1>Bienvenido</h1>
+    </header>
+
+    <!-- Formulario de Registro -->
+    <section id="registro">
+        <h2>Registro de Usuario</h2>
+        <form id="miFormulario">
+            <input type="text" name="Nombre" id="Nombre" placeholder="Nombre de usuario" required>
+            <input type="text" name="Direccion" id="Direccion" placeholder="Dirección" required>
+            <input type="number" name="Telefono" id="Telefono" placeholder="Teléfono" required>
+            <input type="email" name="Correo_Electronico" id="Correo_Electronico" placeholder="Correo Electrónico" required>
+            <input type="password" name="Password" id="Password" placeholder="Contraseña" required>
+            <button id="boton1" type="submit" class="button">Registrarme</button>
+        </form>
+        <p id="resultado"></p>
+    </section>
+
+    <!-- Formulario de Inicio de Sesión -->
+    <section id="inicioSesion">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+            <input type="email" name="Correo" id="CorreoLogin" placeholder="Correo Electrónico" required>
+            <input type="password" name="Password" id="PasswordLogin" placeholder="Contraseña" required>
+            <button type="submit" class="button">Iniciar Sesión</button>
+        </form>
+        <p id="loginResultado"></p>
+    </section>
+
+    <footer class="bg-dark text-white text-center p-4 mt-4" id="contacto">
+        <p>Teléfono: +34 618 08 47 88 | Email: concesionarioJGS@gmail.com</p>
+        <p>Dirección: Calle los Sotos, 12, Saron, España</p>
+        <p>Mejor experiencia para los mejores conductores ¡Corre a vernos!</p>
+    </footer>
+
+    <script src="registro.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
